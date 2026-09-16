@@ -1,0 +1,428 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    color: #171717;
+    background: #ffffff;
+}
+
+body {
+    min-height: 100vh;
+}
+
+section {
+    padding: 90px 0;
+}
+
+.container {
+    max-width: 1180px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    padding: 18px 0;
+    background: rgba(255, 255, 255, 0.96) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #111 !important;
+}
+
+.navbar-nav {
+    gap: 8px;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
+    background: #f1f6ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 110px 0;
+    background:
+        radial-gradient(circle at 90% 20%, #eaf2ff 0, transparent 35%),
+        linear-gradient(135deg, #ffffff 0%, #f7faff 100%);
+}
+
+.hero .row {
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background: #eaf2ff;
+    color: #0d6efd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #0d6efd;
+}
+
+.hero p {
+    max-width: 520px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 32px;
+}
+
+.hero .btn {
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(13, 110, 253, 0.3);
+}
+
+.hero-image-wrapper {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.section-title {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FITNESS
+========================= */
+
+.fitness-section {
+    background: #ffffff;
+}
+
+.fitness-card {
+    border: 1px solid #eeeeee !important;
+    border-radius: 18px !important;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.35s ease;
+}
+
+.fitness-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.fitness-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.fitness-card:hover img {
+    transform: scale(1.05);
+}
+
+.fitness-card .card-body {
+    padding: 25px;
+}
+
+.fitness-card .card-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.fitness-card .card-text {
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   API SECTION
+========================= */
+
+.api-data {
+    background: #f7f9fc;
+}
+
+.api-data #api-data {
+    min-height: 100px;
+}
+
+.api-data .card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.api-data .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.api-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.api-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #0d6efd;
+}
+
+
+/* =========================
+   UPLOAD
+========================= */
+
+.uploaded_area {
+    background: #ffffff;
+}
+
+.upload-box {
+    min-height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px dashed #cfd6df;
+    border-radius: 20px;
+    background: #fafcff;
+
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover,
+.upload-box.dragging {
+    border-color: #0d6efd;
+    background: #f1f6ff;
+}
+
+.upload-box p {
+    margin-bottom: 12px;
+    color: #777;
+}
+
+.upload-box p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.upload-box .btn {
+    margin-top: 10px;
+    padding: 11px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#imagePreview {
+    margin-top: 25px;
+}
+
+#imagePreview img {
+    max-width: 320px;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    padding: 45px 0;
+    background: #111827;
+    color: #ffffff;
+}
+
+.footer h4 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #9ca3af;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    animation: slideInLeft 0.8s ease;
+}
+
+.hero p {
+    animation: slideInLeft 1s ease;
+}
+
+.hero .btn {
+    animation: slideInLeft 1.2s ease;
+}
+
+.hero img {
+    animation: fadeIn 1.2s ease;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .hero img {
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero img {
+        height: 350px;
+        border-radius: 15px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .fitness-card img {
+        height: 230px;
+    }
+
+    .upload-box {
+        min-height: 260px;
+        padding: 25px;
+    }
+}

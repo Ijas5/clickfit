@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Click Fit</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    Click<span style="color:#0d6efd;">Fit</span>
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#fitness">Fitness</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#sports">Sports</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#upload">Upload</a>
+    </li>
+
+</ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6">
+    <div class="hero-content">
+
+        <span class="hero-badge">FITNESS • SPORTS • WELLNESS</span>
+
+        <h1>
+            UNLEASH<br>
+            YOUR <span>POTENTIAL</span>
+        </h1>
+
+        <p>
+            Train hard. Stay active. Feel stronger.
+            Click Fit helps you stay motivated and make
+            fitness a part of your everyday life.
+        </p>
+
+        <a href="#fitness" class="btn btn-primary">
+            GET STARTED
+        </a>
+
+    </div>
+</div>
+
+            <div class="col-lg-6">
+                <img src="images/clickfit.jpg" class="img-fluid" alt="Fitness training">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="fitness-section">
+    <div class="container">
+        <h2 class="text-center section-title">
+            Fitness Activities
+        </h2>
+
+        <p class="text-center section-subtitle">
+            Discover simple and effective ways to stay active,
+            build strength, and improve your overall fitness.
+        </p>
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="card fitness-card h-100">
+                    <img src="images/Runnig.jpg" alt="Running">
+                    <div class="card-body">
+                        <h5 class="card-title">Running</h5>
+                        <p class="card-text">
+                            Improve your stamina, endurance, and cardiovascular health
+                            with regular running.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card fitness-card h-100">
+                    <img src="images/Strength.jpg" alt="Strength Training">
+                    <div class="card-body">
+                        <h5 class="card-title">Strength Training</h5>
+                        <p class="card-text">
+                            Build strength, improve muscle fitness, and become stronger
+                            with focused workouts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card fitness-card h-100">
+                    <img src="images/Sports.jpg" alt="Sports">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports</h5>
+                        <p class="card-text">
+                            Stay active, have fun, and improve your fitness through
+                            the sports you love.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="sports" class="api-data">
+    <div class="container">
+
+        <h2 class="text-center section-title">
+            EXPLORE OUR PICKS
+        </h2>
+
+        <p class="text-center section-subtitle">
+            Discover products and gear from our latest collection.
+        </p>
+
+        <div id="apiData">
+            <!-- API response will appear here -->
+        </div>
+
+    </div>
+</section>
+
+<section class="uploaded_area">
+    <div class="container">
+        <h2 class="text-center mb-5">UPLOAD YOUR IMAGE</h2>
+        <div class="upload-box">
+            <p>Drag & Drop Image Here</p>
+            <p>OR</p>
+            <label for="imageInput" class="btn btn-primary">
+                Choose Image
+            </label>
+
+            <input type="file" id="imageInput" accept="image/*" hidden>
+            <div id="imagePreview"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <h4>Click Fit</h4>
+        <p>Train hard. Stay active. Feel stronger.</p>
+        <p class="mb-0">&copy; 2026 Click Fit. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
