@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Click Fit
 
 A responsive one-page fitness and sports website built as a Full Stack Developer assessment project.
@@ -83,3 +84,6 @@ click-fit/
 ├── package.json
 ├── .gitignore
 └── README.md
+=======
+# clickfit
+>>>>>>> cf7e5bb44c6a404e8414b912912b0b66ee322ae6
