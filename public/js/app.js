@@ -42,7 +42,7 @@ $("#imageInput").on("change",function(){
 
      const file = this.files[0];
 
-    console.log(file);
+  
 
 });
 
